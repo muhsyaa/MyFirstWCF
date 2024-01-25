@@ -22,7 +22,7 @@ namespace MyFirstWCF
         [WebGet(ResponseFormat = WebMessageFormat.Json, UriTemplate = "GetSquareData/{value}")]
         string GetSquareData(string value);
 
-        // url accept a parameter number
+        // url accept a parameter number and return object
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json, UriTemplate = "GetHappinessMessage/{id}")]
         HappinessMessageObject GetHappinessMessage(string id);
